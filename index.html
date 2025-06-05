@@ -12,92 +12,177 @@
         background-size: cover;
         background-attachment: fixed;
       }
-      .nav{
-        width:100%;
-        height:70px;
-        background-color:#544f5d;
-        font-size:30px;
-        line-height:70px;
-      }
+
+        .nav {
+            width: 100%;
+            height: 70px;
+            background-color: rgba(72, 92, 101, 0.8);
+            font-size: 20px;
+            line-height: 70px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content:space-around;
+            align-items: center;
+        }
+        
+        .nav img {
+            height: 50px;
+        }
+        
+        .nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav li {
+            margin: 0 15px;
+            list-style: none;
+        }
+        
+        .nav a {
+            text-decoration: none;
+            color: #c1b9cf;
+            transition: color 0.3s;
+        }
+        
+        .nav a:hover {
+            color: #ffffff;
+        }
+        
       a{
         text-decoration:none;
         color:#c1b9cf;
       }
-      .nav>li{
-        height:30px;
-        padding:0 15px;
-        float:left;
-        list-style:none;
-      }
-      .continer{
-        width:80%;
-        background-color:#f1f1f1;
-        margin:0 auto;
-        margin-top:20px;
-      }
-      .box{
-        width:80%;
-        font-family: Arial;
-        font-weight: bold;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 0 10px white;
-        display:flex;
-        background-color:#f1f1f1;
-        margin:0 auto;
-        margin-top:20px;
-      }
-      .boxr{
-        width:80%;
-        font-family: Arial;
-        font-weight: bold;
-        padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 0 10px rgb(255, 255, 255);
-        display:flex;
-        flex-direction:row-reverse;
-        background-color:#dfdae6;
-        margin:0 auto;
-        margin-top:20px;
-      }
-      .icon {
-        width:50%;
-        border-radius: 40%;
-        margin:10px 20px;
-      }
-      .text{
-        color:black;
-        font-size:40px;
-        text-align:right;
-        display:flex;
-        flex-direction:row-reverse;
-        margin:0px 20px;
-      }
-      .textr{
-        color:black;
-        font-size:40px;
-        text-align:left;
-        display:flex;
-        flex-direction:row-reverse;
-        margin:0px 20px;
-      }
-      .alignleft{
-        float:left;
-      }
-      .alignright{
-        float:right;
-      }
+        
+        .container {
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .box {
+            width: 80%;
+            font-family: Arial;
+            font-weight: bold;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            background-color: rgba(44, 83, 100, 0.7);
+            margin: 20px auto;
+        }
+        
+        .boxr {
+            width: 80%;
+            font-family: Arial;
+            font-weight: bold;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: rgba(44, 83, 100, 0.7);
+            margin: 20px auto;
+        }
+        
+        .icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 10px 20px;
+            border: 3px solid #c1b9cf;
+        }
+        
+        .text {
+            color: #f1f1f1;
+            font-size: 28px;
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px 20px;
+        }
+        
+        .textr {
+            color: #f1f1f1;
+            font-size: 28px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0px 20px;
+        }
+        .knowledge-section {
+            width: 80%;
+            background-color: rgba(32, 58, 67, 0.7);
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            color:#ffffff;
+        }
+        .knowledge-sectionb a {
+            text-decoration: none;
+            color: #c1b9cf;
+            transition: color 0.3s;
+            font-size: 10px;
+            position: absolute;
+            left: 10px;
+        }
+        
+        .knowledge-section a:hover {
+            color: #ffffff;
+        }
+        
+
+        /* Copyright */
+        .copyright {
+            background-color: rgba(15, 32, 39, 0.9);
+            text-align: center;
+            line-height: 80px;
+            height: 80px;
+            width: 100%;
+            font-size: 16px;
+            color: #f1f1f1;
+            margin-top: 30px;
+        }
+        
+        /* Responsive Design */
+            @media (max-width: 768px) {
+            /* Hide original nav on mobile */
+            .nav {
+                display: none;
+            }
+            
     </style>
-  </head>
-  <body onload="getD1()">
+</head>
+  <body>
     <div class="nav">
-      <img src="https://i.imgs.ovh/2025/05/01/rRBZg.png" alt="boat" height=70px class="alignleft">
-      <img src="https://i.imgs.ovh/2025/05/01/rRBZg.png" alt="boat" height=70px class="alignright">
+      <img src="https://i.imgs.ovh/2025/05/01/rRBZg.png" alt="boat" height=70px>
+      <li>
+        <a href="#head">首页</a>
+      </li>
+      <li>
+        <a href="#member">成员风采</a>
+      </li>
+      <li>
+        <a href="#knowledge">知识集锦</a>
+      </li>
+      <li>
+        <a href="#copyright">版权信息</a>
+      </li>
+      <img src="https://i.imgs.ovh/2025/05/01/rRBZg.png" alt="boat" height=70px>
     </div>
-    <div>
+    <div id="head">
       <img src="https://i.imgs.ovh/2025/05/02/r6LAX.jpeg" alt="boat" width=100%>
     </div>
-    <div class="continer">
+    <div class="container" id="member">
       <div class="box">
         <div>
           <img src="https://i.imgs.ovh/2025/05/02/r6TJQ.jpeg" alt="yuan" class="icon">
@@ -187,14 +272,15 @@
         </div>
       </div>
     </div>
-    <div style="
-      background-color:black;
-      text-align:center;
-      line-height:80px;
-      height:80px;
-      font-size:20px;
-      color:#f1f1f1;
-    ">
+    <div class="knowledge-section" id="knowledge">
+      <div>
+        <p style="font-size: 20px;">对联<p>
+        <li>
+          <a href="#">对联基础知识</a>
+        </li>
+      </div>
+    </div>
+    <div class="copyright"id="copyright">
       <p>版权所有：18135045126@163.com</p>
     </div>
   </body>
